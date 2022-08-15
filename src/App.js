@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+
+import React from 'react'
+import './Navbar.css'
+
+function Navbar() {
+    const buttons=['Home','About','Features','Pricing','How It Works','Contact','Login']
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="navbar">
+    <div className='header'>
+
+        <div className="left-container">
+            <img className='fleecard-image' src="http://fleecard.com/static/media/Fleecard_beta.4ffac123.png" alt="fleecard logo" />
+           
+        </div>
+
+
+
+       <div className="right-container">
+           <div className="log-buttons">
+            
+                {buttons.map((item)=>{
+                    return(
+                    <button className="button" area-disabled='false'>{item}</button>
+                    )})}
+           </div>
+                
+       </div>
     </div>
-  );
+    </div>
+  )
 }
 
-export default App;
+export default Navbar

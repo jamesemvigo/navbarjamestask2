@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*{
+    font-size: 62.5%;
+}
+
+
+.navbar{
+    background-color: rgba(230, 224, 224, 0.19);
+    width: 80%;
+    margin: 0 auto;
+    max-height: 30vh;
+    overflow: hidden;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.left-container{
+    width: 50%;
+    flex: 1 1 50;
+    position: relative;
+    background-color: red;
+    
+
+}
+.right-container{
+    width: 50%;
+    flex: 1 1 50;
+    position: relative
+
+
+}
+.log-buttons{
+    display: flex;
+    
+}
+.left-container > img{
+    width: 200px;
+    
+    padding: 3rem;
+
+}
