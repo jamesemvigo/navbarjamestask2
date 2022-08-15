@@ -21,7 +21,7 @@ function Navbar() {
             
                 {buttons.map((item)=>{
                     return(
-                    <button className="button" area-disabled='false'>{item}</button>
+                    <button className="buttonstyle" >{item}</button>
                     )})}
            </div>
                 
