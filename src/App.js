@@ -1,9 +1,14 @@
 import React from 'react'
 import Navbar from './Navbar'
-
+import ProductList from './ProductList'
+import './App.css'
 function App() {
   return (
-    <div><Navbar></Navbar></div>
+    <div>
+      <Navbar/>
+    <ProductList/>
+    </div>
+    
   )
 }
 
